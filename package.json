@@ -1,10 +1,13 @@
 {
-  "name": "root",
+  "name": "dl-lerna-monorepo",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
     "lerna": "^6.5.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

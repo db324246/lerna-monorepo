@@ -3,7 +3,7 @@
   "useWorkspaces": true,
   "npmClient": "yarn",
   "version": "0.0.1-alpha.0",
-  "publishConfig": {
+  "publish": {
     "registry": "https://registry.npmjs.org/"
   }
 }
