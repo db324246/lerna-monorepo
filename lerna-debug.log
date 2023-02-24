@@ -1,0 +1,157 @@
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '6.5.1',
+0 silly argv   '$0': 'E:\\nvm\\nodejs\\node_modules\\lerna\\dist\\cli.js'
+0 silly argv }
+1 notice cli v6.5.1
+2 verbose rootPath D:\demos\lerna-monorepo
+3 verbose session 9a0dd44c07742380
+4 verbose user-agent lerna/6.5.1/node@v14.21.3+x64 (win32)
+5 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '6.5.1' }
+6 verbose rootPath D:\demos\lerna-monorepo
+7 info current version 0.0.2-alpha.0
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly getCurrentBranch
+11 verbose currentBranch master
+12 silly remoteBranchExists
+13 silly isBehindUpstream
+14 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
+15 silly hasTags
+16 verbose hasTags true
+17 silly git-describe.sync "v0.0.2-alpha.0-5-g16f9ee9" => {"lastTagName":"v0.0.2-alpha.0","lastVersion":"v0.0.2-alpha.0","refCount":"5","sha":"16f9ee9","isDirty":false}
+18 info Looking for changed packages since v0.0.2-alpha.0
+19 silly checking diff packages/dl-lerna-test-a
+20 silly found diff in packages/dl-lerna-test-a/README.md
+20 silly found diff in packages/dl-lerna-test-a/__tests__/dl-lerna-test-a.test.js
+20 silly found diff in packages/dl-lerna-test-a/lib/dl-lerna-test-a.js
+20 silly found diff in packages/dl-lerna-test-a/package.json
+21 verbose filtered diff [
+21 verbose filtered diff   'packages/dl-lerna-test-a/README.md',
+21 verbose filtered diff   'packages/dl-lerna-test-a/__tests__/dl-lerna-test-a.test.js',
+21 verbose filtered diff   'packages/dl-lerna-test-a/lib/dl-lerna-test-a.js',
+21 verbose filtered diff   'packages/dl-lerna-test-a/package.json'
+21 verbose filtered diff ]
+22 silly checking diff packages/dl-lerna-test-b
+23 silly found diff in packages/dl-lerna-test-b/README.md
+23 silly found diff in packages/dl-lerna-test-b/__tests__/dl-lerna-test-b.test.js
+23 silly found diff in packages/dl-lerna-test-b/lib/dl-lerna-test-b.js
+23 silly found diff in packages/dl-lerna-test-b/package.json
+24 verbose filtered diff [
+24 verbose filtered diff   'packages/dl-lerna-test-b/README.md',
+24 verbose filtered diff   'packages/dl-lerna-test-b/__tests__/dl-lerna-test-b.test.js',
+24 verbose filtered diff   'packages/dl-lerna-test-b/lib/dl-lerna-test-b.js',
+24 verbose filtered diff   'packages/dl-lerna-test-b/package.json'
+24 verbose filtered diff ]
+25 silly checking diff packages/dl-lerna-test-c
+26 silly found diff in packages/dl-lerna-test-c/README.md
+26 silly found diff in packages/dl-lerna-test-c/__tests__/dl-lerna-test-c.test.js
+26 silly found diff in packages/dl-lerna-test-c/lib/dl-lerna-test-c.js
+26 silly found diff in packages/dl-lerna-test-c/package.json
+27 verbose filtered diff [
+27 verbose filtered diff   'packages/dl-lerna-test-c/README.md',
+27 verbose filtered diff   'packages/dl-lerna-test-c/__tests__/dl-lerna-test-c.test.js',
+27 verbose filtered diff   'packages/dl-lerna-test-c/lib/dl-lerna-test-c.js',
+27 verbose filtered diff   'packages/dl-lerna-test-c/package.json'
+27 verbose filtered diff ]
+28 verbose updated dl-lerna-test-a
+29 verbose updated dl-lerna-test-b
+30 verbose updated dl-lerna-test-c
+31 verbose git-describe undefined => "v0.0.2-alpha.0-5-g16f9ee9"
+32 silly git-describe parsed => {"lastTagName":"v0.0.2-alpha.0","lastVersion":"v0.0.2-alpha.0","refCount":"5","sha":"16f9ee9","isDirty":false}
+33 info execute Skipping releases
+34 silly lifecycle No script for "preversion" in "dl-lerna-monorepo", continuing
+35 silly lifecycle No script for "preversion" in "dl-lerna-test-a", continuing
+36 silly lifecycle No script for "preversion" in "dl-lerna-test-c", continuing
+37 verbose version dl-lerna-test-a has no lockfile. Skipping lockfile update.
+38 verbose version dl-lerna-test-c has no lockfile. Skipping lockfile update.
+39 silly lifecycle No script for "version" in "dl-lerna-test-a", continuing
+40 silly lifecycle No script for "preversion" in "dl-lerna-test-b", continuing
+41 verbose version dl-lerna-test-b has no lockfile. Skipping lockfile update.
+42 silly lifecycle No script for "version" in "dl-lerna-test-c", continuing
+43 silly lifecycle No script for "version" in "dl-lerna-test-b", continuing
+44 silly lifecycle No script for "version" in "dl-lerna-monorepo", continuing
+45 silly gitAdd [
+45 silly gitAdd   'packages/dl-lerna-test-a/package.json',
+45 silly gitAdd   'packages/dl-lerna-test-c/package.json',
+45 silly gitAdd   'packages/dl-lerna-test-b/package.json',
+45 silly gitAdd   'lerna.json'
+45 silly gitAdd ]
+46 silly gitCommit v0.0.3-alpha.0
+47 verbose git [ 'commit', '-m', 'v0.0.3-alpha.0' ]
+48 silly gitTag v0.0.3-alpha.0 git tag %s -m %s
+49 verbose git [ 'tag', 'v0.0.3-alpha.0', '-m', 'v0.0.3-alpha.0' ]
+50 silly lifecycle No script for "postversion" in "dl-lerna-test-a", continuing
+51 silly lifecycle No script for "postversion" in "dl-lerna-test-b", continuing
+52 silly lifecycle No script for "postversion" in "dl-lerna-test-c", continuing
+53 silly lifecycle No script for "postversion" in "dl-lerna-monorepo", continuing
+54 info git Pushing tags...
+55 silly gitPush origin master
+56 info publish Publishing packages to npm...
+57 notice Skipping all user and access validation due to third-party registry
+58 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
+59 warn ENOLICENSE Packages dl-lerna-test-a, dl-lerna-test-b, and dl-lerna-test-c are missing a license.
+59 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+59 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+60 silly getCurrentSHA
+61 verbose getCurrentSHA 3ab3b35e4a115831eb002d62da383de97810f3d1
+62 silly lifecycle No script for "prepublish" in "dl-lerna-monorepo", continuing
+63 silly lifecycle No script for "prepare" in "dl-lerna-monorepo", continuing
+64 silly lifecycle No script for "prepublishOnly" in "dl-lerna-monorepo", continuing
+65 silly lifecycle No script for "prepack" in "dl-lerna-monorepo", continuing
+66 verbose pack-directory packages\dl-lerna-test-a
+67 verbose pack-directory packages\dl-lerna-test-c
+68 silly lifecycle No script for "prepublish" in "dl-lerna-test-a", continuing
+69 silly lifecycle No script for "prepublish" in "dl-lerna-test-c", continuing
+70 silly lifecycle No script for "prepare" in "dl-lerna-test-a", continuing
+71 silly lifecycle No script for "prepare" in "dl-lerna-test-c", continuing
+72 silly lifecycle No script for "prepublishOnly" in "dl-lerna-test-a", continuing
+73 silly lifecycle No script for "prepublishOnly" in "dl-lerna-test-c", continuing
+74 silly lifecycle No script for "prepack" in "dl-lerna-test-a", continuing
+75 silly lifecycle No script for "prepack" in "dl-lerna-test-c", continuing
+76 silly lifecycle No script for "postpack" in "dl-lerna-test-a", continuing
+77 verbose packed packages\dl-lerna-test-a
+78 silly lifecycle No script for "postpack" in "dl-lerna-test-c", continuing
+79 verbose packed packages\dl-lerna-test-c
+80 verbose pack-directory packages\dl-lerna-test-b
+81 silly lifecycle No script for "prepublish" in "dl-lerna-test-b", continuing
+82 silly lifecycle No script for "prepare" in "dl-lerna-test-b", continuing
+83 silly lifecycle No script for "prepublishOnly" in "dl-lerna-test-b", continuing
+84 silly lifecycle No script for "prepack" in "dl-lerna-test-b", continuing
+85 silly lifecycle No script for "postpack" in "dl-lerna-test-b", continuing
+86 verbose packed packages\dl-lerna-test-b
+87 silly lifecycle No script for "postpack" in "dl-lerna-monorepo", continuing
+88 verbose publish dl-lerna-test-a
+89 verbose publish dl-lerna-test-c
+90 silly FetchError: request to https://registry.npmjs.org/dl-lerna-test-a failed, reason: connect ETIMEDOUT 104.16.20.35:443
+90 silly     at ClientRequest.<anonymous> (D:\demos\lerna-monorepo\node_modules\minipass-fetch\lib\index.js:130:14)
+90 silly     at ClientRequest.emit (events.js:400:28)
+90 silly     at TLSSocket.socketErrorListener (_http_client.js:475:9)
+90 silly     at TLSSocket.emit (events.js:412:35)
+90 silly     at emitErrorNT (internal/streams/destroy.js:106:8)
+90 silly     at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+90 silly     at processTicksAndRejections (internal/process/task_queues.js:82:21)
+90 silly  FetchError: request to https://registry.npmjs.org/dl-lerna-test-a failed, reason: connect ETIMEDOUT 104.16.20.35:443
+90 silly     at ClientRequest.<anonymous> (D:\demos\lerna-monorepo\node_modules\minipass-fetch\lib\index.js:130:14)
+90 silly     at ClientRequest.emit (events.js:400:28)
+90 silly     at TLSSocket.socketErrorListener (_http_client.js:475:9)
+90 silly     at TLSSocket.emit (events.js:412:35)
+90 silly     at emitErrorNT (internal/streams/destroy.js:106:8)
+90 silly     at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+90 silly     at processTicksAndRejections (internal/process/task_queues.js:82:21) {
+90 silly   code: 'ETIMEDOUT',
+90 silly   errno: 'ETIMEDOUT',
+90 silly   syscall: 'connect',
+90 silly   address: '104.16.20.35',
+90 silly   port: 443,
+90 silly   type: 'system'
+90 silly }
+91 error ETIMEDOUT request to https://registry.npmjs.org/dl-lerna-test-a failed, reason: connect ETIMEDOUT 104.16.20.35:443
+92 error FetchError: request to https://registry.npmjs.org/dl-lerna-test-a failed, reason: connect ETIMEDOUT 104.16.20.35:443
+92 error     at ClientRequest.<anonymous> (D:\demos\lerna-monorepo\node_modules\minipass-fetch\lib\index.js:130:14)
+92 error     at ClientRequest.emit (events.js:400:28)
+92 error     at TLSSocket.socketErrorListener (_http_client.js:475:9)
+92 error     at TLSSocket.emit (events.js:412:35)
+92 error     at emitErrorNT (internal/streams/destroy.js:106:8)
+92 error     at emitErrorCloseNT (internal/streams/destroy.js:74:3)

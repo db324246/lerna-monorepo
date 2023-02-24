@@ -23,5 +23,6 @@
   },
   "scripts": {
     "test": "node ./__tests__/dl-lerna-test-a.test.js"
-  }
+  },
+  "gitHead": "3ab3b35e4a115831eb002d62da383de97810f3d1"
 }
