@@ -14,7 +14,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.npm.taobao.org/"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,5 @@
   "dependencies": {
     "@dl-lerna/test-a": "^0.0.2-alpha.0"
   },
-  "gitHead": "4f308b7e20c8f94439be3de52564bd55b2a2a517"
+  "gitHead": "f1a95fbcc5871fedd3e47803fce559760ba07b8d"
 }
