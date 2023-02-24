@@ -1,11 +1,11 @@
 {
-  "name": "@dl-lerna/test-b",
+  "name": "dl-lerna-test-c",
   "version": "0.0.2-alpha.0",
   "description": "> TODO: description",
   "author": "db324246 <2368653672@qq.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/test-b.js",
+  "main": "lib/dl-lerna-test-c.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -22,10 +22,6 @@
     "url": "git@gitee.com:dait/lerna-monorepo.git"
   },
   "scripts": {
-    "test": "node ./__tests__/test-b.test.js"
-  },
-  "dependencies": {
-    "@dl-lerna/test-a": "^0.0.2-alpha.0"
-  },
-  "gitHead": "17934c8e838ee8186cf0ebf7fd3d4a7de4667359"
+    "test": "node ./__tests__/dl-lerna-test-c.test.js"
+  }
 }
