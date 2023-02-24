@@ -22,5 +22,6 @@
   },
   "scripts": {
     "test": "node ./__tests__/test-a.test.js"
-  }
+  },
+  "gitHead": "2913a769ab8bd4257507988843b46aa3bf086d96"
 }
