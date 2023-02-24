@@ -4,6 +4,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "push": "git add . && git commit -m 'commit script' && git push origin master"
+  },
   "devDependencies": {
     "lerna": "^6.5.1"
   },
