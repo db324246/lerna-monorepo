@@ -1,6 +1,6 @@
 {
   "name": "@dl-lerna/test-b",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.2-alpha.0",
   "description": "> TODO: description",
   "author": "db324246 <2368653672@qq.com>",
   "homepage": "",
@@ -24,6 +24,6 @@
     "test": "node ./__tests__/test-b.test.js"
   },
   "dependencies": {
-    "@dl-lerna/test-a": "^0.0.1-alpha.0"
+    "@dl-lerna/test-a": "^0.0.2-alpha.0"
   }
 }
